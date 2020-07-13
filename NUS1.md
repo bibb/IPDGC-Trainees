@@ -203,7 +203,7 @@ awk '$6 == "exonic" && $13 < 0.01{print $NF}' > NUS1_SKATO_Vars.txt
 
 module load vcftools/1.0.7 samtools 
 
-vcftools --gzvcf NUS1_hg19.bed IPDGC_VarsQC_FullIndivQc.rawID_NoMaf_autosomes.NoMono.idiopathic.NoSuperDup.vcf.gz \
+vcftools --gzvcf IPDGC_VarsQC_FullIndivQc.rawID_NoMaf_autosomes.NoMono.idiopathic.NoSuperDup.vcf.gz \
 --snps NUS1_SKATO_Vars.txt \
 --recode \
 --recode-INFO-all \
